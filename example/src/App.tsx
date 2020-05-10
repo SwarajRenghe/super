@@ -9,11 +9,19 @@ import RadioButtonScreen from './examples/RadioButtonExample';
 import NumPadScreen from './examples/NumPadExample';
 import TableScreen from './examples/TableExample';
 import PopupScreen from './examples/PopupExample';
+import StepsScreen from './examples/StepsExample';
 
 const Stack = createStackNavigator();
 
 const HomeScreen = ({ navigation }: any) => {
-  const screens = ['Button', 'RadioButton', 'NumPad', 'Tables', 'Popup'];
+  const screens = [
+    'Button',
+    'RadioButton',
+    'NumPad',
+    'Tables',
+    'Popup',
+    'Steps',
+  ];
   return (
     <SafeAreaView>
       {screens.map((item) => (
@@ -38,6 +46,7 @@ function App() {
         <Stack.Screen name="NumPad" component={NumPadScreen} />
         <Stack.Screen name="Tables" component={TableScreen} />
         <Stack.Screen name="Popup" component={PopupScreen} />
+        <Stack.Screen name="Steps" component={StepsScreen} />
       </Stack.Navigator>
     </NavigationContainer>
   );
