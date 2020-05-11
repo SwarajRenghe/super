@@ -2,7 +2,10 @@ import { TouchableOpacity, ScrollView } from 'react-native-gesture-handler';
 import React from 'react';
 import { Text, StyleSheet } from 'react-native';
 import { NavigationContainer } from '@react-navigation/native';
-import { createStackNavigator } from '@react-navigation/stack';
+import {
+  createStackNavigator,
+  CardStyleInterpolators,
+} from '@react-navigation/stack';
 import { SafeAreaView } from 'react-native-safe-area-context';
 
 // component example screen imports
@@ -62,9 +65,12 @@ const HomeScreen = ({ navigation }: any) => {
   );
 };
 function App() {
+  const { forHorizontalIOS } = CardStyleInterpolators;
   return (
     <NavigationContainer>
-      <Stack.Navigator>
+      <Stack.Navigator
+        screenOptions={{ cardStyleInterpolator: forHorizontalIOS }}
+      >
         <Stack.Screen name="Home" component={HomeScreen} />
         <Stack.Screen name="Button" component={ButtonScreen} />
         <Stack.Screen name="RadioButton" component={RadioButtonScreen} />
