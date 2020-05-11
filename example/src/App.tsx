@@ -14,6 +14,7 @@ import RadioButtonScreen from './examples/RadioButtonExample';
 import NumPadScreen from './examples/NumPadExample';
 import TableScreen from './examples/TableExample';
 import PopupScreen from './examples/PopupExample';
+import CameraScreen from './examples/CameraExample';
 
 // animated example screen imports
 import CollapseScreen from './examples/CollapseExample';
@@ -28,6 +29,7 @@ const HomeScreen = ({ navigation }: any) => {
     'NumPad',
     'Tables',
     'Popup',
+    'Camera',
   ];
   const animatedScreens = ['Fade', 'Collapse'];
   return (
@@ -77,6 +79,7 @@ function App() {
         <Stack.Screen name="NumPad" component={NumPadScreen} />
         <Stack.Screen name="Tables" component={TableScreen} />
         <Stack.Screen name="Popup" component={PopupScreen} />
+        <Stack.Screen name="Camera" component={CameraScreen} />
         <Stack.Screen name="Fade" component={FadeScreen} />
         <Stack.Screen name="Collapse" component={CollapseScreen} />
       </Stack.Navigator>
