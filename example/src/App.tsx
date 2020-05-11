@@ -10,6 +10,7 @@ import { SafeAreaView } from 'react-native-safe-area-context';
 
 // component example screen imports
 import ButtonScreen from './examples/ButtonExample';
+import ChexboxScreen from './examples/CheckboxExample';
 import RadioButtonScreen from './examples/RadioButtonExample';
 import NumPadScreen from './examples/NumPadExample';
 import TableScreen from './examples/TableExample';
@@ -26,6 +27,7 @@ const HomeScreen = ({ navigation }: any) => {
   const componentScreens = [
     'Button',
     'RadioButton',
+    'CheckBox',
     'NumPad',
     'Tables',
     'Popup',
@@ -76,6 +78,7 @@ function App() {
         <Stack.Screen name="Home" component={HomeScreen} />
         <Stack.Screen name="Button" component={ButtonScreen} />
         <Stack.Screen name="RadioButton" component={RadioButtonScreen} />
+        <Stack.Screen name="CheckBox" component={ChexboxScreen} />
         <Stack.Screen name="NumPad" component={NumPadScreen} />
         <Stack.Screen name="Tables" component={TableScreen} />
         <Stack.Screen name="Popup" component={PopupScreen} />
