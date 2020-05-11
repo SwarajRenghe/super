@@ -1,1 +1,4 @@
-export { default as Fade } from './Fade';
+import Fade from './Fade';
+import Collapse from './Collapse';
+
+export { Collapse, Fade };

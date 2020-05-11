@@ -4,11 +4,16 @@ import { Text, StyleSheet } from 'react-native';
 import { NavigationContainer } from '@react-navigation/native';
 import { createStackNavigator } from '@react-navigation/stack';
 import { SafeAreaView } from 'react-native-safe-area-context';
+
+// component example screen imports
 import ButtonScreen from './examples/ButtonExample';
 import RadioButtonScreen from './examples/RadioButtonExample';
 import NumPadScreen from './examples/NumPadExample';
 import TableScreen from './examples/TableExample';
 import PopupScreen from './examples/PopupExample';
+
+// animated example screen imports
+import CollapseScreen from './examples/CollapseExample';
 import FadeScreen from './examples/FadeExample';
 
 const Stack = createStackNavigator();
@@ -21,7 +26,7 @@ const HomeScreen = ({ navigation }: any) => {
     'Tables',
     'Popup',
   ];
-  const animatedScreens = ['Fade'];
+  const animatedScreens = ['Fade', 'Collapse'];
   return (
     <SafeAreaView>
       <ScrollView
@@ -67,6 +72,7 @@ function App() {
         <Stack.Screen name="Tables" component={TableScreen} />
         <Stack.Screen name="Popup" component={PopupScreen} />
         <Stack.Screen name="Fade" component={FadeScreen} />
+        <Stack.Screen name="Collapse" component={CollapseScreen} />
       </Stack.Navigator>
     </NavigationContainer>
   );
