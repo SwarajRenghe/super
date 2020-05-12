@@ -64,10 +64,10 @@
   "peerDependencies": {
     "react": "*",
     "react-native": "*",
-    "react-native-reanimated": "*",
+    "react-native-camera": "*",
     "react-native-gesture-handler": "*",
-    "react-native-vector-icons": "*",
-    "react-native-camera": "*"
+    "react-native-reanimated": "*",
+    "react-native-vector-icons": "*"
   },
   "jest": {
     "preset": "react-native",
