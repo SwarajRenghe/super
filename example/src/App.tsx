@@ -82,7 +82,11 @@ function App() {
         <Stack.Screen name="NumPad" component={NumPadScreen} />
         <Stack.Screen name="Tables" component={TableScreen} />
         <Stack.Screen name="Popup" component={PopupScreen} />
-        <Stack.Screen name="Camera" component={CameraScreen} />
+        <Stack.Screen
+          name="Camera"
+          component={CameraScreen}
+          options={{ header: () => null }}
+        />
         <Stack.Screen name="Fade" component={FadeScreen} />
         <Stack.Screen name="Collapse" component={CollapseScreen} />
       </Stack.Navigator>

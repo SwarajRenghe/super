@@ -5,7 +5,7 @@ import { Camera } from 'supergroww';
 
 const CameraExample = () => {
   return (
-    <View>
+    <View style={{ flex: 1 }}>
       <Camera />
     </View>
   );
