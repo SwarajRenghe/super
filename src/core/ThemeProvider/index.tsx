@@ -1,9 +1,11 @@
-import React from 'react';
-import { Animated } from 'react-native';
-import { ThemeProviderProps } from './types';
+// import React, { useState } from 'react';
+// import { Animated, Text } from 'react-native';
+// import { ThemeProviderProps } from './types';
 
-const ThemeProvider = ({ children }: ThemeProviderProps) => {
-  return <Animated.View>{children}</Animated.View>;
-};
+// const useTheme = (props: ThemeProviderProps) => {
+//   const [theme, setTheme] = useState();
 
-export default ThemeProvider;
+//   return [theme, setTheme];
+// };
+
+// export default useTheme;
